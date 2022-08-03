@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PeerPal Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h3 class="peerpal">PeerPal</h3>
+            <ul>
+                <li class="sidenavlist"><a href="#"><i class="fa-solid fa-gauge-simple-high"></i> Dashboard</a></li>
+                <li class="sidenavlist"><a href="#"><i class="fa-solid fa-bookmark"></i> Contact</a></li>
+                <li class="sidenavlist"><a href="#"><i class="fa-solid fa-envelope-open"></i> Campaigns</a></li>
+                <li class="sidenavlist"><a href="#"><i class="fa-solid fa-clipboard-list"></i> Forms</a></li>
+                <li class="sidenavlist"><a href="#"><i class="fa-solid fa-calendar"></i> Calendar</a></li>
+                <li class="sidenavlist"><a href="#"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+                <li class="sidenavlist"><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+
+            <div class="sidebarbottom">
+                <i class="fa-brands fa-youtube fa-xl"></i>
+            </div>
+            <div class="youtubepart">
+                <div class="guide">
+                    <h5 class="guidecont"> Need some guidance? </h5>
+                </div>
+                <div class="discover">
+                    <h5 class="tutorials"> Discover tutorials</h5>
+                </div>
+            </div>
+            <br>
+            <div class="bottomhr">
+
+            </div>
+
+            <br><br>
+            <div class="bottombtn">
+                <button class="addcamp"> <span class="plusbtn"> + </span> New Campaign</button>
+            </div>
+            <br>
+            <div class="profile">
+                <img class="profileimg" src="woman.png" alt="profileimg"> <span class="profilename">Anna Perkins</span>
+                <i class="fa-solid fa-ellipsis"
+                    style="position: absolute;padding-right: 0px;margin-left: 138px;margin-top: 10px;"></i>
+            </div>
+
+        </div>
+
+        <div class="main_content">
+            <br><br>
+            <div class="header">
+                <table class="toppart">
+                    <tr class="rowpne">
+                        <td class="colum1">
+                            <h4 class="analytics"> Analytics </h4>
+                        </td>
+                        <td class="colum2">
+                            <div class="sidebtns">
+                                <select name="months" id="selectmonth">
+                                    <option value="volvo"> <b>Last 3 months</b> </option>
+                                    <option value="saab"> <b> Last 6 months </b> </option>
+                                    <option value="opel"> <b> Last 9 month </b> </option>
+                                    <option value="audi"> <b> Last 1 Year </b> </option>
+                                </select>
+                            </div>
+                        </td>
+                        <td class="colum3">
+                            <button class="filter"><i class="fa-solid fa-filter"></i> Filters</button>
+                        </td>
+                        <td class="colum4">
+                            <button class="exportbtn"><i class="fa-solid fa-download"></i>Export</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="middle">
+                <table class="middlepart">
+                    <tr class="rowone">
+                        <td class="midcol1">
+                            <div class="card1">
+                                <i class="fa-solid fa-rocket fa-2xl"></i>
+                                <p class="tc"> Total Campaigns </p>
+                                <h1 class="forty9">49</h1>
+                            </div>
+                        </td>
+                        <td class="midcol2">
+                            <div class="card2">
+                                <i class="fa-solid fa-award fa-2xl"></i>
+                                <p> Avg Student Lead Score </p>
+                                <h1 class="cont">38<span class="hundred">/100</span></h1>
+                                <h6 class="percent">+ 112.54%</h6>
+                        </td>
+                        <td class="midcol3">
+                            <div class="card3">
+                                <i class="fa-solid fa-eye fa-2xl"></i>
+                                <p> Avg Campaigns Open Rates </p>
+                                <h1 class="content">74<span class="hundred">%</span></h1>
+                                <h6 class="percentage">+ 76.2%</h6>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="chartpart">
+                <div class="chartMenu">
+                    <div class="chartBox">
+                        <div class="selectlist2">
+
+                            <select name="months" id="select">
+                                <option value="volvo"> <span class="sent">Sent vs</span> Open </option>
+                                <option value="saab"> Last 6 months </option>
+                                <option value="opel"> Last 9 month </option>
+                                <option value="audi"> Last 1 Year </option>
+                            </select>
+                        </div>
+
+                        <div class="mainchart">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bubblepart">
+                    <h4 class="campaigntyp">Campaign types</h4>
+
+                    <div class="vennCard">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="databasepart">
+                <h4 class="datacampaign">
+                    All campaigns
+                </h4>
+
+
+                <div class="endpart" style="width: 100%;">
+                    <div class="endicon"> <i class="fa-regular fa-envelope"></i> </div>
+                    <div class="endparttable">
+                        <table class="endtable">
+                            <tr class="endtablerow1">
+                                <th class="head1">Name <i id="arrowup" class="fa-solid fa-angle-up fa-sm"></i> </th>
+                                <th class="head2">Start <img class="iconimg" src="up-and-down-arrow.png" alt="arrow">
+                                </th>
+                                <th class="head3">End <img class="iconimg" src="up-and-down-arrow.png" alt="arrow">
+                                </th>
+                                <th class="head4">Engagement <img class="iconimg" src="up-and-down-arrow.png"
+                                        alt="arrow">
+                                </th>
+                                <th class="head5">Time sent-open <img class="iconimg" src="up-and-down-arrow.png"
+                                        alt="arrow"> </th>
+                                <th class="head6">Sent to <img class="iconimg" src="up-and-down-arrow.png" alt="arrow">
+                                </th>
+                                <th class="head7"></th>
+                            </tr>
+                            <tr class="endtablerow2">
+                                <td class="data1"> <b>School Tour</b> </td>
+                                <td class="data2">February 18, 2019</td>
+                                <td class="data3">March 19, 2019</td>
+                                <td class="data4">
+                                    <i class="fa-solid fa-eye" id="twenty"> 23 % </i>
+                                    <img class="iconimg" src="select.png" alt="finger"> <span class="seventeen"> 17 %
+                                    </span>
+                                </td>
+                                <td class="data5">2 days</td>
+                                <td class="data6">2074</td>
+                                <td class="data6"> <i class="fa-solid fa-ellipsis"></i> </td>
+                            </tr>
+
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // setup 
+        const data = {
+            labels: ['', 'February', '', 'March', 'April', ''],
+            datasets: [{
+                label: 'Sent',
+                data: [1500, 1700, 1400, 1900, 1550, 1750],
+                backgroundColor: '#1088f8',
+                borderColor: '#1088f8',
+                pointRadius: 0
+            }, {
+                label: 'Open',
+                data: [1000, 700, 1100, 900, 1100, 700],
+                backgroundColor: '#EB59AC',
+                borderColor: '#EB59AC',
+                pointRadius: 0
+            },]
+        };
+
+        // config 
+        const config = {
+            type: 'line',
+            data,
+            options: {
+                tension: 0.75,
+
+                plugins: {
+                    legend: {
+                        align: 'end',
+                        labels: {
+                            usePointStyle: true,
+                            pointStyle: 'rectRounded',
+
+                        }
+                    }
+                },
+                tooltips: {
+                    display: true,
+                },
+                
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            maxTicksLimit: 6
+                        }
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+
+        //PieChart 
+        //Data of Pie Chart
+        const datapie = {
+            labels: ['Email', 'Social', 'Form'],
+            datasets: [{
+                label: 'Weekly Sales',
+                data: [18, 12, 6],
+                backgroundColor: [
+                    '#208BFF',
+                    '#EC58AD',
+                    '#1FD199'
+                ],
+                borderColor: [
+                    '#208BFF',
+                    '#EC58AD',
+                    '#1FD199'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        //Config PieChart
+        // config 
+        const configpie = {
+            type: 'pie',
+            data: datapie,
+            options: {
+                plugins: {
+                    legend: {
+                        align: 'center',
+                        labels: {
+                            usePointStyle: true,
+                            pointStyle: 'rectRounded',
+
+                        }
+                    }
+                },
+            }
+        };
+
+        // render init block
+        const pieChart = new Chart(
+            document.getElementById('pieChart'),
+            configpie
+        );
+    </script>
+
+
+
+
+</body>
+
+</html>

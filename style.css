@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f3f5f9;
+}
+
+
+.sidenavlist:hover {
+background-color: white;
+border-radius: 7px;
+}
+
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar {
+    height: 100%;
+    padding: 30px 0px;
+    padding-left: 20px;
+    padding-right: 22px;
+    border-right: 2px solid #F3F4F5;
+}
+
+.wrapper .sidebar h3 {
+    font-size: 20px;
+    color: #4697F7;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.wrapper .sidebar ul li {
+    padding: 15px;
+}
+
+.wrapper .sidebar ul li a {
+    color: #717375;
+    display: block;
+    font-size: 17px;
+}
+
+.wrapper .sidebar ul li a .fa {
+    width: 25px;
+}
+
+.sidenavlist i:hover {
+    color: #1088f8;
+}
+
+.wrapper .sidebar ul li:hover a {
+    color: rgb(72, 71, 71);
+}
+
+.wrapper .sidebar .social_media {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.wrapper .sidebar .social_media a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 5px;
+    color: #bdb8d7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.wrapper .main_content {
+
+    background-color: white;
+    padding: 10px;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.wrapper .main_content .header {
+    padding: 20px;
+    padding-top: 5px;
+}
+
+.sidebar i {
+    padding-right: 15px;
+}
+
+.sidebarbottom {
+    border: 5px solid #F3F4F5;
+    position: relative;
+    margin-left: 65px;
+    margin-top: 150px;
+    margin-right: 0px;
+    background-color: white;
+    height: 65px;
+    width: 65px;
+    padding-left: 14px;
+    padding-top: 19px;
+    border-radius: 12px;
+}
+.guide{
+    border-bottom: 3px solid #F3F4F5;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.discover{
+    padding-top: 12px;
+}
+.sidebarbottom i {
+    color: #1088f8;
+
+}
+
+.bottomhr {
+    margin-top: 3px;
+    border-bottom: 2px solid #e4e2e2;
+}
+
+.addcamp {
+    background-color: #1088f8;
+    color: white;
+    padding-right: 15px;
+    height: 50px;
+    width: 190px;
+    border: none;
+    border-radius: 7px;
+    margin-left: 5px;
+
+}
+
+.plusbtn {
+    color: #bdb8d7;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.youtubepart{
+    margin-top: -28px;
+    height: 150px;
+    background-color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+.tutorials{
+    color: #1088f8;
+}
+
+.profile {
+    justify-content: space-between;
+    padding: 6px;
+    padding-top: 0px;
+}
+
+.profileimg {
+    height: 30px;
+    width: 30px;
+}
+
+.profilename {
+    margin-top: 10px;
+    margin-left: 12px;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 550;
+}
+
+.header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    font-size: 25px;
+    font-weight: 550;
+    color: #000;
+}
+
+.wrapper .main_content .info {
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+}
+
+.wrapper .main_content .info div {
+    margin-bottom: 20px;
+}
+
+.colum1 {
+    padding-right: 38.7rem;
+}
+
+#selectmonth {
+    font-weight: 550;
+    color: #444242;
+    padding-left: 17px;
+    padding-right: 0px;
+    border: 1px solid lightgray;
+    width: 179px;
+    height: 47px;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 20px;
+}
+
+.filter {
+    font-weight: 550;
+    color: #444242;
+    padding-left: 16px;
+    border: 1px solid lightgray;
+    width: 124px;
+    height: 47px;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.colum3 i {
+    padding-right: 12px;
+}
+
+.exportbtn {
+    border: 2px solid #dceaf9;
+    font-weight: 550;
+    color: #1088f8;
+    padding-left: 16px;
+    width: 117px;
+    height: 47px;
+    border-radius: 5px;
+    outline: none;
+    text-align: justify;
+    background-color: #dceaf9;
+}
+
+.colum4 i {
+    padding-right: 12px;
+    color: #79bcfe
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+.card1 {
+    width: 23.5rem;
+    background-color: white;
+    border: #e4e2e2 1px solid;
+    margin-right: 40px;
+    border-radius: 5px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 24px;
+    padding-right: 17px;
+    display: flex;
+}
+
+.card1 i {
+    padding: 20px;
+    background-color: #dceaf9;
+    color: #1088f8;
+    border-radius: 5px;
+    padding-top: 34px;
+}
+
+.card1 p {
+    color: rgb(125, 125, 125);
+    font-size: 12px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.forty9 {
+    margin-top: 28px;
+    margin-left: -110px;
+}
+
+.card2 {
+    width: 23.5rem;
+    background-color: white;
+    border: #e4e2e2 1px solid;
+    margin-right: 40px;
+    border-radius: 5px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 22px;
+    padding-right: 17px;
+    display: flex;
+}
+
+.card2 i {
+
+    background-color: #EBF8F4;
+    color: #39A886;
+    padding: 22px;
+    border-radius: 5px;
+    padding-top: 34px;
+}
+
+.card2 p {
+    color: rgb(125, 125, 125);
+    font-size: 12px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+.hundred {
+    font-size: 15px;
+    color: rgb(165, 161, 161);
+}
+
+.cont {
+    margin-top: 28px;
+    margin-left: -163px;
+}
+
+.percent {
+    margin-top: 47px;
+    margin-left: 95px;
+    color: #49c6a2;
+}
+
+.card3 {
+    width: 23.5rem;
+    background-color: white;
+    border: #e4e2e2 1px solid;
+    margin-right: 40px;
+    border-radius: 5px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 22px;
+    padding-right: 17px;
+    display: flex;
+}
+
+.card3 i {
+    background-color: #F9EDF1;
+    color: #C3558B;
+    padding: 17px;
+    border-radius: 5px;
+    padding-top: 35px;
+}
+
+.card3 p {
+    color: rgb(125, 125, 125);
+    font-size: 12px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+.hundred {
+    font-size: 15px;
+    color: rgb(165, 161, 161);
+}
+
+.content {
+    margin-top: 28px;
+    margin-left: -185px;
+}
+
+.percentage {
+    margin-top: 47px;
+    margin-left: 130px;
+    color: #49c6a2;
+}
+
+.chartpart {
+    display: flex;
+}
+
+.mainchart {
+    height: 430px;
+    width: 795px;
+    border: 1px solid #e4e2e2;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+}
+
+#myChart {
+    padding-left: 20px;
+    display: block;
+    box-sizing: border-box;
+    height: 385.6px;
+    width: 772.8px;
+    padding-top: 20px;
+    padding-bottom: 2;
+    padding-right: 20px;
+}
+
+#select {
+    border: none;
+    padding: 9px;
+    margin-left: 40px;
+    margin-top: 10px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sent {
+    color: lightgray;
+}
+
+.bubblepart {
+    float: right;
+    width: 23.5rem;
+    height: 430px;
+    background-color: white;
+    border: #e4e2e2 1px solid;
+    border-radius: 5px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.campaigntyp {
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.databasepart {
+    padding: 20px;
+}
+
+.selectlist2 {
+    position: absolute;
+}
+
+.vennCard {
+    border: none;
+    height: 358px;
+    width: 350px;
+    padding: 10px;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+.endpart {
+    width: 100%;
+    display: flex;
+}
+
+.endicon {
+    margin-top: 85px;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color: #beffdba9;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.endicon i {
+    color: #1FD199;
+}
+
+.endtable {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.endparttable {
+    width: 93%;
+    border-bottom: 1px solid #e4e2e2;
+    margin-left: 20px;
+    text-align: left;
+
+    font-size: 14px;
+}
+
+.endtablerow1 {
+    height: 90px;
+    font-size: 12px;
+    color: #8d8b8b;
+    font-weight: 600;
+}
+
+.endtablerow2 {
+    font-weight: 500;
+}
+
+.data12 {
+    height: 70px;
+}
+
+#arrowup {
+    color: #1088f8;
+}
+
+.iconimg {
+    position: absolute;
+    padding-left: 5px;
+}
+
+#twenty {
+    padding-right: 25px;
+}
+
+.seventeen {
+    margin-left: 22px;
+    font-weight: 600;
+    color: #8d8b8b;
+}
+
+.data4 i {
+    color: #8d8b8b;
+    font-size: 14px;
+}
